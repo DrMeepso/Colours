@@ -4,6 +4,7 @@
 
     // components
     import Landing from './landing.svelte';
+    import ColourPicker from "./colourPicker.svelte";
 
     enum Pages {
         Landing,
@@ -41,6 +42,9 @@
         <div id="ContentHolder">
             {#if CurrentPage === Pages.Landing}
                 <Landing />
+            {/if}
+            {#if CurrentPage === Pages.Picker}
+                <ColourPicker />
             {/if}
         </div> 
 
@@ -87,10 +91,8 @@
 
     #ContentHolder
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: calc(100% - 34px - 6px);
+        overflow: hidden;
     }
 
     p 

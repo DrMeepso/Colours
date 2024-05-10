@@ -37,6 +37,15 @@
 
 <style>
 
+    main
+    {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     #HeaderHolder
     {
         text-align: center;
@@ -68,7 +77,6 @@
         flex-direction: column;
         width: 200px;
 
-        margin: auto;
         margin-top: 20px;
     }
 
