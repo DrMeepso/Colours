@@ -154,6 +154,7 @@
     #ColourName
     {
         text-align: center;
+        height: 70px;
     }
 
     #NameElement
